@@ -1,5 +1,5 @@
 resource "aws_appsync_graphql_api" "graphql_api" {
-  authentication_type = "${var.name}"
+  authentication_type = "${var.authentication_type}"
   name                = "${var.name}"
   user_pool_config    = "${var.user_pool_config}"
 }
