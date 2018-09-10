@@ -1,7 +1,9 @@
 resource "aws_appsync_graphql_api" "graphql_api" {
   authentication_type = "${var.authentication_type}"
   name                = "${var.name}"
-  user_pool_config    = "${var.user_pool_config}"
+  user_pool_config    = [
+    "${var.user_pool_config}"
+  ]
 }
 
 data "external" "graphql_endpoint" {
