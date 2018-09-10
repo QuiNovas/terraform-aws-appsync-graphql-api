@@ -1,6 +1,6 @@
-# terraform-aws-appsync-graphql-api
+# terraform-aws-appsync-graphql-api-endpoint
 
-This module creates an AppSync GraphQL API and get the endpoint (which the regular resource does not do).
+This module takes an AppSync GraphQL API and gets the endpoint (which the regular resource does not do).
 
 Requires the following executables on the machine _terraforming_:
 - **aws** https://docs.aws.amazon.com/cli/latest/userguide/installing.html
